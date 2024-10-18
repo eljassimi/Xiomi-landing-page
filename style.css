@@ -90,7 +90,7 @@ body, html {
     position: relative;
     width: 100%;
     max-width: 100%;
-    height: 500px; 
+    height: 700px; 
     overflow: hidden;
     margin: auto;
     }
@@ -139,9 +139,13 @@ body, html {
     align-items: center;
     margin-top: 30px;
 }
+.title h2{
+    font-size: 50px;
+}
 .title h3{
     font-weight: 200;
     color: #656565;
+    font-size: 30px;
 }
 .phones .phone{
     display: flex;
@@ -154,13 +158,12 @@ body, html {
     border-radius: 8px;
     cursor: pointer;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
-    margin: 50px;
+    margin: 100px;
+    margin-top: 10px ;
+
 }
 .phone:hover {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.171);
-}
-.smartphone-mobil{
-    display: none;
 }
 
 .phones .phone img{
@@ -203,10 +206,13 @@ body, html {
     align-self: center;
     justify-content: start;
 }
+.about h2 {
+    font-size: 50px;
+}
 .about .title2{
     background-color: #f1f1f1;
-    border-radius: 8px;
-    width: 400px;
+    border-radius: 20px;
+    width: 500px;
     height: 350px;
     margin-top: 20px;
 }
@@ -214,17 +220,20 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+    padding-top: 10px;
     height: 100%;
 }
 .about .abt .paragraphe {
     display: flex;
     justify-content: center;
+
 }
 .about .abt .paragraphe p{
     font-size: 10px;
-    width: 380px ;
+    flex-wrap: wrap;
     margin-top: 10px;
+    padding: 10px;
     text-align: center;
     
 }
@@ -260,23 +269,39 @@ body, html {
     align-items: center;
     align-self: center;
 }
+.contact h2{
+    font-size: 50px;
+}
+.contact .num{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.contact .name{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
 .contact .ctn {
     display: flex;
     flex-direction: column;
     background-color: #f1f1f1;
-    border-radius: 8px;
-    width: 400px;
-    height: 350px;
+    border-radius: 20px;
+    width: 500px;
+    height: 400px;
     margin-top: 20px;
 }
 .contact .ctn h3{
     margin-top: 40px;
-    margin-left: 20px;
+    margin-left: 35px;
 }
 .contact .ctn p{
     font-size: 10px;
     margin-top: 5px;
-    margin-left: 20px;
+    margin-left: 35px;
     font-weight: 500;
 }
 .contact .ctn form{
@@ -285,12 +310,15 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .contact .ctn form input{
     border: none;
-    border-radius: 2px;
-    height: 25px;
+    border-radius: 10px;
+    height: 35px;
     outline: none;
+    width: 200px;
+    
 }
 .contact .ctn form input:focus{
     box-shadow: 0px 0px 5px rgba(255, 105, 0, 0.5);
@@ -305,9 +333,9 @@ body, html {
     padding-left: 10px;
 }
 #textarea{
-    margin-top: 5px;
+    margin-top: 10px;
     border: none;
-    border-radius: 2px;
+    border-radius: 10px;
     outline: none;
 }
 #textarea::placeholder {
@@ -327,12 +355,12 @@ textarea:focus{
 }
 .contact .ctn form button{
     margin-top: 20px;
-    width: 100px;
+    width: 150px;
     border: none;
     background-color: #FF6900;
     color: white;
-    border-radius: 4px;
-    height: 20px;
+    border-radius: 10px;
+    height: 40px;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 
 }
@@ -401,6 +429,7 @@ textarea:focus{
     .contact .name input{
         width: 150px;
         margin: 10px;
+        
     }
     .contact .num{
         display: flex;
